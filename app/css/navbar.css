@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+  background-color: #d85378;
+
+  .nav:hover {
+    cursor: pointer;
+  }
+}
