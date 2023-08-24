@@ -11,8 +11,8 @@ export const meta: V2_MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="gameclub">
-      <h1>Concordia Game Development</h1>
+    <div className="page">
+      <h1 className="gameclub">Concordia Game Development</h1>
     </div>
   );
 }

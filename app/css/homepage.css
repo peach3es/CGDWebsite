@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&display=swap");
+.page {
+  margin: clamp(6rem, 8vw, 10rem) 0;
+  padding: 1rem;
+  min-height: 80vh;
+}
 
 .gameclub,
 h1 {
-  font-family: "Public Pixel", sans-serif;
-  font-weight: 700;
-  font-size: 4rem;
+  font-family: "League Spartan", sans-serif;
+  font-size: 5rem;
   text-align: center;
   color: #532d53;
   text-transform: uppercase;

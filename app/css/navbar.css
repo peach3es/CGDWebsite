@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+.header-footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -10,8 +15,10 @@ body {
   align-items: center;
   text-align: center;
   height: fit-content;
-
-  background-color: #d85378;
+  backdrop-filter: blur(2rem);
+  background-color: hsla(343, 61%, 52%, 0.8);
+  position: fixed;
+  width: 100%;
 
   .cgd-logo {
     width: 36px;
@@ -32,11 +39,57 @@ body {
       cursor: pointer;
     }
     .nav {
-      color: white;
       text-decoration: none;
-      font-family: "Corbert", sans-serif;
-      font-size: 14px;
-      font-size: 200;
+      .nav-item {
+        color: white;
+        font-family: "Corbert", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+      }
     }
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  backdrop-filter: blur(2rem);
+  background-color: hsla(343, 61%, 52%, 0.8);
+  padding: 1rem 0;
+  padding-inline: clamp(2rem, 40vw, 10rem);
+
+  .info-wrapper-footer,
+  .contact-wrapper-footer,
+  .social-wrapper-footer {
+    margin: 1rem;
+    box-sizing: border-box;
+  }
+
+  .info,
+  .contact,
+  .social {
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .social-wrapper-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .address,
+  .email,
+  .ig,
+  .fb,
+  .itch,
+  .linked {
+    color: #532d53;
+    font-family: "Corbert", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
   }
 }

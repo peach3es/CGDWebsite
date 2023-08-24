@@ -1,6 +1,6 @@
 export default function DashboardSponsor() {
   return (
-    <div>
+    <div className="page">
       <h1>Our Sponsors</h1>
     </div>
   );

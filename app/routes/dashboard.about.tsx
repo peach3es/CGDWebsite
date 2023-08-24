@@ -1,7 +1,7 @@
 export default function DashboardAbout() {
   return (
-    <div>
-      <h1>About</h1>
+    <div className="page">
+      <h1>About Us</h1>
     </div>
   );
 }

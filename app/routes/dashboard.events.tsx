@@ -1,6 +1,6 @@
 export default function DashboardEvents() {
   return (
-    <div>
+    <div className="page">
       <h1>Events</h1>
     </div>
   );
