@@ -2,27 +2,54 @@ import { Outlet, Link } from "@remix-run/react";
 import "app/css/navbar.css";
 import "assets/fonts/fonts.css";
 import CGDLogo from "assets/icons/cgd-transparent.png";
+import homeicon from "assets/icons/home-icon.svg";
+import abouticon from "assets/icons/abtus-nav.svg";
+import eventsicon from "assets/icons/event-icon.svg";
+import sponsorsicon from "assets/icons/sponsor-icon.svg";
 
 export default function Dashboard() {
   return (
     <div className="header-footer">
       <div className="header">
-        <img
-          src={CGDLogo}
-          alt="Concordia-Game-Dev club logo"
-          className="cgd-logo"
-        />
+        <a href="/dashboard">
+          <img
+            src={CGDLogo}
+            alt="Concordia-Game-Dev club logo"
+            className="cgd-logo"
+          />
+        </a>
+
         <div className="navbar">
           <Link to="/dashboard" className="nav">
+            <img
+              src={homeicon}
+              alt="home icon that brings you back to gamedev main page"
+              className="svg-icon"
+            />
             <h3 className="home nav-item">Home</h3>
           </Link>
           <Link to="/dashboard/about" className="nav">
+            <img
+              src={abouticon}
+              alt="icon that brings you to gamedev about us page"
+              className="svg-icon"
+            />
             <h3 className="about nav-item">About</h3>
           </Link>
           <Link to="/dashboard/events" className="nav">
+            <img
+              src={eventsicon}
+              alt="icon that brings you to gamedev upcoming events page"
+              className="svg-icon"
+            />
             <h3 className="events nav-item">Events</h3>
           </Link>
           <Link to="/dashboard/sponsor" className="nav">
+            <img
+              src={sponsorsicon}
+              alt="icon that brings you to gamedev sponsor page"
+              className="svg-icon"
+            />
             <h3 className="sponsors nav-item">Sponsors</h3>
           </Link>
         </div>

@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  background: linear-gradient(hsl(343 90% 85%), hsl(320 45% 95%));
+}
+
 .page {
   margin: clamp(6rem, 8vw, 10rem) 0;
   padding: 1rem;
