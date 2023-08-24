@@ -1,6 +1,8 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 import "app/css/homepage.css";
 import "assets/fonts/fonts.css";
+import "app/css/background-animation.css";
+import cgdpink from "assets/icons/cgd-transp-pink.png";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -13,6 +15,43 @@ export default function Index() {
   return (
     <div className="page">
       <h1 className="gameclub">Concordia Game Development</h1>
+      <div className="background">
+        <span>
+          <img
+            src={cgdpink}
+            alt="cgd pink alternate logo"
+            className="floaties"
+          />
+        </span>
+        <span>
+          <img
+            src={cgdpink}
+            alt="cgd pink alternate logo"
+            className="floaties"
+          />
+        </span>
+        <span>
+          <img
+            src={cgdpink}
+            alt="cgd pink alternate logo"
+            className="floaties"
+          />
+        </span>
+        <span>
+          <img
+            src={cgdpink}
+            alt="cgd pink alternate logo"
+            className="floaties"
+          />
+        </span>
+        <span>
+          <img
+            src={cgdpink}
+            alt="cgd pink alternate logo"
+            className="floaties"
+          />
+        </span>
+      </div>
     </div>
   );
 }
