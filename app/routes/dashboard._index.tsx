@@ -1,4 +1,6 @@
 import type { V2_MetaFunction } from "@remix-run/node";
+import "app/css/homepage.css";
+import "assets/fonts/fonts.css";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -9,7 +11,7 @@ export const meta: V2_MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+    <div className="gameclub">
       <h1>Concordia Game Development</h1>
     </div>
   );

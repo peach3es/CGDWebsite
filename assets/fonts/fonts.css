@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Corbert";
+  src: url("./Corbert-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Public Pixel";
+  src: url("./PublicPixel.ttf") format("truetype");
+}

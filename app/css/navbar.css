@@ -2,17 +2,41 @@ body {
   margin: 0;
 }
 
-.navbar {
+.header {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
-  justify-content: center;
+  gap: 2rem;
+  justify-content: left;
   align-items: center;
-  height: 100px;
+  text-align: center;
+  height: fit-content;
 
   background-color: #d85378;
 
-  .nav:hover {
-    cursor: pointer;
+  .cgd-logo {
+    width: 36px;
+    height: 36px;
+    padding-left: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+
+    .nav:hover {
+      cursor: pointer;
+    }
+    .nav {
+      color: white;
+      text-decoration: none;
+      font-family: "Corbert", sans-serif;
+      font-size: 14px;
+      font-size: 200;
+    }
   }
 }

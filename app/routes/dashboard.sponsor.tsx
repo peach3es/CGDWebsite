@@ -1,7 +1,7 @@
 export default function DashboardSponsor() {
   return (
     <div>
-      <h1>Sponsor</h1>
+      <h1>Our Sponsors</h1>
     </div>
   );
 }
