@@ -23,9 +23,9 @@
   animation-iteration-count: infinite;
 }
 .floaties {
-  width: 8vmin;
+  width: 12vmin;
   aspect-ratio: 1;
-  filter: blur(5px);
+  filter: blur(2px);
 }
 
 .background span:nth-child(1) {

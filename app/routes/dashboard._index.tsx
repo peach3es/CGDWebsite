@@ -6,15 +6,17 @@ import cgdpink from "assets/icons/cgd-transp-pink.png";
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "| CGD" },
+    { title: "Home | CGD" },
     { name: "description", content: "Welcome to Concordia Game Dev Club!" },
   ];
 };
 
 export default function Index() {
   return (
-    <div className="page">
-      <h1 className="gameclub">Concordia Game Development</h1>
+    <div>
+      <div className="page">
+        <h1 className="gameclub">Concordia Game Development</h1>
+      </div>
       <div className="background">
         <span>
           <img
