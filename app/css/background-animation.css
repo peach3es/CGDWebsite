@@ -29,18 +29,18 @@
 }
 
 .background span:nth-child(1) {
-  top: 32%;
+  top: 34%;
   left: 76%;
   animation-duration: 154s;
   animation-delay: -288s;
   transform-origin: -18vw 21vh;
 }
 .background span:nth-child(2) {
-  top: 30%;
+  top: 35%;
   left: 25%;
   animation-duration: 151s;
   animation-delay: -145s;
-  transform-origin: 19vw -20vh;
+  transform-origin: 5vw -20vh;
 }
 .background span:nth-child(3) {
   top: 43%;

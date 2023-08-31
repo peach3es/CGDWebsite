@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   height: fit-content;
@@ -56,6 +56,13 @@
           brightness(95%) contrast(100%);
       }
     }
+  }
+
+  .socials-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-right: 10px;
   }
 }
 
