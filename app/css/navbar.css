@@ -32,9 +32,6 @@
     text-align: center;
     height: fit-content;
 
-    .nav:hover {
-      cursor: pointer;
-    }
     .nav {
       display: flex;
       flex-direction: row;
@@ -42,6 +39,7 @@
       align-items: center;
       gap: 5px;
       text-decoration: none;
+      position: relative;
       .nav-item {
         color: white;
         font-family: "Corbert", sans-serif;
@@ -56,13 +54,31 @@
           brightness(95%) contrast(100%);
       }
     }
+
+    .nav::before {
+      cursor: pointer;
+      content: "";
+      background: #fbe9f5;
+      position: absolute;
+      bottom: 10px;
+      width: 102%;
+      height: 2px;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+
+    .nav:hover::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
   }
 
   .socials-menu {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    padding: 0 10px;
+    padding: 0 1rem;
 
     .menu-svg {
       aspect-ratio: 1;
