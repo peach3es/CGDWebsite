@@ -1,4 +1,5 @@
 import cgdpink from "assets/icons/cgd-transp-pink.png";
+import "app/css/sponsors.css";
 import type { V2_MetaFunction } from "@remix-run/node";
 
 export const meta: V2_MetaFunction = () => {
@@ -12,6 +13,16 @@ export default function DashboardSponsor() {
   return (
     <div className="page">
       <h1>Our Sponsors</h1>
+      <div className="sponsor-container">
+        <div className="sponsor-text">
+          We’ve set out to establish an environment which promotes interactions
+          between club members and the game development industry at large. To
+          better serve the CGD community, we have created a sponsorship package
+          for any organization interested in helping us support the game
+          developers of tomorrow!
+        </div>
+      </div>
+
       <div className="background">
         <span>
           <img

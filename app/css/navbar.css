@@ -16,7 +16,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-
+  z-index: 2;
   .cgd-logo {
     width: 36px;
     height: 36px;

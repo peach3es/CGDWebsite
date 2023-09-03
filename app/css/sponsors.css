@@ -1,0 +1,16 @@
+.sponsor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+
+  .sponsor-text {
+    font-family: "Corbert", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 16vw;
+    color: #532d53;
+    font-weight: bold;
+  }
+}
