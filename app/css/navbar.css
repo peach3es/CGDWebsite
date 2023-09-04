@@ -56,8 +56,8 @@
       .svg-icon {
         aspect-ratio: 1;
         width: 28px;
-        filter: invert(72%) sepia(48%) saturate(2813%) hue-rotate(298deg)
-          brightness(95%) contrast(100%);
+        filter: invert(19%) sepia(11%) saturate(2704%) hue-rotate(251deg)
+          brightness(92%) contrast(88%);
       }
     }
 
