@@ -26,8 +26,8 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
-        <script src="vanilla-tilt.js"></script>
       </body>
+      <script src="./assets/effects/vanilla-tilt.js"></script>
     </html>
   );
 }
