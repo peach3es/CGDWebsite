@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 2rem;
+  gap: 3rem;
 
   .sponsor-text {
     font-family: "Corbert", sans-serif;
@@ -15,9 +16,32 @@
 
     animation: sponsor-text 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.15s both;
   }
+
+  .sponsor-img{
+    aspect-ratio:unset;
+    width: 800px;
+    border: solid 5px #f1bbcb;
+    border-radius: 25px;
+
+    animation: sponsor-img 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+  }
 }
 
-@keyframes sponsor-text {
+@keyframes sponsor-text{
+  0% {
+    transform: translateZ(-700px) translateY(50px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes sponsor-img{
   0% {
     transform: translateZ(-700px) translateY(50px);
     opacity: 0;

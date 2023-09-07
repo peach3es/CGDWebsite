@@ -1,4 +1,5 @@
 import cgdpink from "assets/icons/cgd-transp-pink.png";
+import sponsorpacklm from "assets/pics/light mode.png";
 import "app/css/sponsors.css";
 import type { V2_MetaFunction } from "@remix-run/node";
 
@@ -14,6 +15,7 @@ export default function DashboardSponsor() {
     <div className="page">
       <h1>Our Sponsors</h1>
       <div className="sponsor-container">
+        <div className="sponsor-text">Thank you for our sponsors!</div>
         <div className="sponsor-text">
           We’ve set out to establish an environment which promotes interactions
           between club members and the game development industry at large. To
@@ -21,6 +23,7 @@ export default function DashboardSponsor() {
           for any organization interested in helping us support the game
           developers of tomorrow!
         </div>
+        <img src={sponsorpacklm} alt="concordia gamedev club sponsorship package overview light mode" className="sponsor-img" />
       </div>
 
       <div className="background">
