@@ -27,7 +27,7 @@ export default function App() {
         <Scripts />
         <LiveReload />
       </body>
-      <script src="./assets/effects/vanilla-tilt.js"></script>
+        
     </html>
   );
 }

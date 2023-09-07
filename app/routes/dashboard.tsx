@@ -16,13 +16,11 @@ export default function Dashboard() {
     <div className="header-footer">
       <div className="header">
         <div>
-          <a href="/dashboard">
+          <a href="/dashboard" >
             <img
               src={CGDLogo}
               alt="Concordia-Game-Dev club logo"
               className="cgd-logo"
-              data-tilt
-              data-tilt-reverse="true"
             />
           </a>
         </div>
