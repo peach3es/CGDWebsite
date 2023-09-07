@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background: linear-gradient(hsl(343 90% 85%), hsl(320 45% 95%));
+  overflow-x: hidden;
 }
 
 .page {
