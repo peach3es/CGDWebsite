@@ -41,6 +41,44 @@
     width: 15%;
     object-fit: contain;
   }
+
+  .button{
+
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    background: #c95d79;
+    border-radius: 20px;
+
+    font-family: "Corbert", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fbe9f5;
+    padding: 0 1rem;
+
+    animation: button 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.28s both;
+
+    .a{
+      text-decoration: none;
+    }
+
+  }
+
+  .button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;  
+  }
+
+  .button:active{
+    transform: scale(0.98);
+    background: #b34c67;
+    transition: all 0.1s ease-in-out;
+  }
+
+
 }
 
 @keyframes sponsor-text{
@@ -84,3 +122,18 @@
     opacity: 1;
   }
 }
+
+@keyframes button{
+  0% {
+    transform: translateZ(-700px) translateY(50px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+

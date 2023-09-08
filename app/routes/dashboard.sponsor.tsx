@@ -26,7 +26,9 @@ export default function DashboardSponsor() {
           developers of tomorrow!
         </div>
         <img src={sponsorpacklm} alt="concordia gamedev club sponsorship package overview light mode" className="sponsor-img" />
-        <button className="button"></button>
+        <a className="button" target="_blank" href="/uploads/sample.pdf"> 
+          <p>Click here for the detailed sponsorship package PDF</p>
+        </a>
         <div className="past-sponsors-container">
           <div className="sponsor-text">Special thanks to our previous sponsors!</div>
           <div className="past-sponsors">
