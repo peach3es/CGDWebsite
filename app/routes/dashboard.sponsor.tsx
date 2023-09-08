@@ -1,5 +1,5 @@
 import cgdpink from "assets/icons/cgd-transp-pink.png";
-import sponsorpacklm from "assets/pics/light mode .png";
+import sponsorpacklm from "assets/pics/light mode.png";
 import cc2mtl from "assets/icons/cc2-mtl.png";
 import cc2 from "assets/icons/cc2.png";
 import "app/css/sponsors.css";
