@@ -2,6 +2,7 @@ import cgdpink from "assets/icons/cgd-transp-pink.png";
 import sponsorpacklm from "assets/pics/light mode.png";
 import cc2mtl from "assets/icons/cc2-mtl.png";
 import cc2 from "assets/icons/cc2.png";
+import PDFViewer from "~/functions/openpdf";
 import "app/css/sponsors.css";
 import type { V2_MetaFunction } from "@remix-run/node";
 
@@ -26,9 +27,11 @@ export default function DashboardSponsor() {
           developers of tomorrow!
         </div>
         <img src={sponsorpacklm} alt="concordia gamedev club sponsorship package overview light mode" className="sponsor-img" />
-        <a className="button" target="_blank" href="/uploads/sample.pdf"> 
+        <PDFViewer />
+        {/* <a className="button" target="_blank" href="/uploads/sample.pdf"> 
           <p>Click here for the detailed sponsorship package PDF</p>
-        </a>
+        </a> */}
+
         <div className="past-sponsors-container">
           <div className="sponsor-text">Special thanks to our previous sponsors!</div>
           <div className="past-sponsors">
