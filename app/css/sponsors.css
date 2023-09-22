@@ -17,16 +17,16 @@
     animation: sponsor-text 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.15s both;
   }
 
-  .sponsor-img{
-    aspect-ratio:unset;
+  .sponsor-img {
+    aspect-ratio: unset;
     width: 800px;
-    border: solid 5px #f1bbcb;
+    border: solid 5px #bf46667f;
     border-radius: 25px;
 
     animation: sponsor-img 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
   }
 
-  .past-sponsors{
+  .past-sponsors {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,26 +36,18 @@
     animation: past-sponsors 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.24s both;
   }
 
-  .past-sponsor-img{
+  .past-sponsor-img {
     aspect-ratio: 3/4;
     width: 15%;
     object-fit: contain;
   }
-
-
 }
 
-/* .button-container {
-  background: #c95d79;
-  border-radius: 20px;
-  padding: 0 1rem;
+.riseup {
+  animation: riseup 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.28s both;
+}
 
-} */
-
-.button-container{
-
-  animation: initialLoading 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.28s forwards;
-
+.button-container {
   all: unset;
   display: flex;
   align-items: center;
@@ -69,24 +61,23 @@
   color: #fbe9f5;
   padding: 0 1rem;
 
-  
   transform: scale(1);
   transition: transform 0.2s ease-in-out;
 }
 
-.button-container:hover{
+.button-container:hover {
   cursor: pointer;
   transform: scale(1.02);
   transition: transform 0.2s ease-in-out;
 }
 
-.button-container:active{
+.button-container:active {
   transform: scale(98%);
   background-color: #b34c67;
-  transition: scale 0.1s ease-in-out;
+  transition: scale 0.2s ease-in-out;
 }
 
-@keyframes sponsor-text{
+@keyframes sponsor-text {
   0% {
     transform: translateZ(-700px) translateY(50px);
     opacity: 0;
@@ -100,7 +91,7 @@
   }
 }
 
-@keyframes sponsor-img{
+@keyframes sponsor-img {
   0% {
     transform: translateZ(-700px) translateY(50px);
     opacity: 0;
@@ -114,7 +105,7 @@
   }
 }
 
-@keyframes past-sponsors{
+@keyframes past-sponsors {
   0% {
     transform: translateZ(-700px) translateY(50px);
     opacity: 0;
@@ -128,7 +119,7 @@
   }
 }
 
-@keyframes initialLoading{
+@keyframes riseup {
   0% {
     transform: translateZ(-700px) translateY(50px);
     opacity: 0;
@@ -141,4 +132,3 @@
     opacity: 1;
   }
 }
-
