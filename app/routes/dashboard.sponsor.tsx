@@ -31,7 +31,6 @@ export default function DashboardSponsor() {
           alt="concordia gamedev club sponsorship package overview light mode"
           className="sponsor-img"
         />
-        {/* <PDFViewer /> */}
         <div className="riseup">
           <a
             className="button-container"
