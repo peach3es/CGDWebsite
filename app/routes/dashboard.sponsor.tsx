@@ -2,7 +2,6 @@ import cgdpink from "assets/icons/cgd-transp-pink.png";
 import sponsorpacklm from "assets/pics/light mode-2.png";
 import cc2mtl from "assets/icons/cc2-mtl.png";
 import cc2 from "assets/icons/cc2.png";
-import PDFViewer from "~/components/openpdf";
 import "app/css/sponsors.css";
 import type { V2_MetaFunction } from "@remix-run/node";
 
