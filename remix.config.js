@@ -14,9 +14,4 @@ export default {
     v2_normalizeFormMethod: true,
     v2_routeConvention: true,
   },
-  base: "/dashboard", // Specify your base path here
-  routes: {
-    // Other routes...
-    "/dashboard": require.resolve("./app/routes/dashboard"),
-  },
 };
