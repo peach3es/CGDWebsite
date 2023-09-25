@@ -17,6 +17,6 @@ export default {
   base: "/dashboard", // Specify your base path here
   routes: {
     // Other routes...
-    "/dashboard": require.resolve("./src/routes/loader.ts"),
+    "/dashboard": require.resolve("app/routes/dashboard"),
   },
 };
