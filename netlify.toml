@@ -1,0 +1,5 @@
+# Redirect with a 301
+[[redirects]]
+from = "/"
+to = "/dashboard"
+status = 301
