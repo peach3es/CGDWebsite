@@ -15,4 +15,8 @@ export default {
     v2_routeConvention: true,
   },
   base: "/dashboard", // Specify your base path here
+  routes: {
+    // Other routes...
+    "/dashboard": require.resolve("./src/routes/loader.ts"),
+  },
 };
