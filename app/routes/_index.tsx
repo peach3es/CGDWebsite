@@ -13,7 +13,7 @@ export const meta: V2_MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div>
+    <div className="header-footer">
       <div className="page">
         <h1 className="gameclub">Concordia Game Development</h1>
       </div>
