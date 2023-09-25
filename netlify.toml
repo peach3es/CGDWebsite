@@ -1,4 +1,4 @@
 [[redirects]]
-  from = "/dashboard"
+  from = "/"
   to = "/dashboard.tsx"
   status = 200
