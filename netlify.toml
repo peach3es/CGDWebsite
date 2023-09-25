@@ -3,3 +3,13 @@
 from = "/"
 to = "/dashboard"
 status = 301
+
+# Redirect all requests to the Remix serverless function
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/remix"  # Adjust this to match your Remix serverless function setup
+  status = 200
+
+[build]
+command = "remix build"  # Specify your build command here
+publish = "public"         # Specify the directory to publish
