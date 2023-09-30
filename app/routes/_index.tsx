@@ -8,6 +8,7 @@ export const meta: MetaFunction = () => {
   return [
     { title: "Home | CGD" },
     { name: "description", content: "Welcome to Concordia Game Dev Club!" },
+    { icon: "./favicon.ico" },
   ];
 };
 
