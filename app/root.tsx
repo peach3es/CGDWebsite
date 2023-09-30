@@ -1,5 +1,5 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
-import type { LinksFunction } from "@remix-run/node";
+// import { cssBundleHref } from "@remix-run/css-bundle";
+// import type { LinksFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -11,9 +11,10 @@ import {
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 
-export const links: LinksFunction = () => [
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
-];
+// export const links: LinksFunction = () => [
+//   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+// ];
+
 export default function App() {
   return (
     <html lang="en">
