@@ -1,0 +1,66 @@
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background span {
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 21;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.floaties {
+  width: 12vmin;
+  aspect-ratio: 1;
+  filter: blur(2px);
+  opacity: 0.7;
+}
+
+.background span:nth-child(1) {
+  top: 34%;
+  left: 76%;
+  animation-duration: 154s;
+  animation-delay: -288s;
+  transform-origin: -18vw 21vh;
+}
+.background span:nth-child(2) {
+  top: 35%;
+  left: 25%;
+  animation-duration: 151s;
+  animation-delay: -145s;
+  transform-origin: 5vw -20vh;
+}
+.background span:nth-child(3) {
+  top: 43%;
+  left: 65%;
+  animation-duration: 196s;
+  animation-delay: -91s;
+  transform-origin: 8vw 10vh;
+}
+.background span:nth-child(4) {
+  top: 85%;
+  left: 68%;
+  animation-duration: 135s;
+  animation-delay: -86s;
+  transform-origin: -12vw 19vh;
+}
+.background span:nth-child(5) {
+  top: 34%;
+  left: 46%;
+  animation-duration: 199s;
+  animation-delay: -115s;
+  transform-origin: 4vw 16vh;
+}

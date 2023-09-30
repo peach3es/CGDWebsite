@@ -1,9 +1,6 @@
 node_modules
 
 /.cache
-/public/build
 /build
+/public/build
 .env
-
-# Local Netlify folder
-.netlify
