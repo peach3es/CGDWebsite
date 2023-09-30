@@ -1,0 +1,15 @@
+
+
+.ourteam{
+
+    all: unset;
+
+    font-family: "League Spartan", sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    color: #532d53;
+    text-transform: uppercase;
+    padding: 0 3vw ;
+  
+    animation: h1 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
