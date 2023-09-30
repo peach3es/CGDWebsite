@@ -1,3 +1,0 @@
-[build]
-command = "remix build"  # Specify your build command here
-publish = "public"         # Specify the directory to publish
