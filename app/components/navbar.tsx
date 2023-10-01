@@ -39,7 +39,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="navbar md-flex shadow-md w-full fixed top-0 left-0">
+    <div className="navbar md-flex shadow-md w-full fixed top-0 left-0 justify-between">
       <div className="flex-shrink-0">
         <a href="/">
           <img
@@ -49,8 +49,9 @@ const Navbar = () => {
           />
         </a>
       </div>
-      <div className="hidden sm:items-center sm:flex">
-        <ul className="page-links">
+
+      <div className="hidden sm:items-center sm:flex w-full justify-between">
+        <ul className="page-links ">
           {Links.map((link) => (
             <li key={link.name}>
               <Link to={link.link} className="nav">
