@@ -1,4 +1,4 @@
-# Welcome to Remix!
+# Welcome to CGDWebsite!
 
 - [Remix Docs](https://remix.run/docs)
 
