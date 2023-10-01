@@ -3,14 +3,26 @@
   flex-direction: column;
 }
 
-.header {
+.cgd-logo {
+  transition: transform 0.2s ease-in-out;
+}
+
+.cgd-logo:hover {
+  transform: scale(1.1);
+}
+
+.cgd-logo:active {
+  transform: scale(0.9);
+}
+
+.navbar {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
   text-align: center;
-  height: fit-content;
+  /* height: min-content; */
   backdrop-filter: blur(2rem);
   background-color: hsla(343, 61%, 52%, 0.8);
   position: fixed;
@@ -18,18 +30,7 @@
   width: 100%;
   z-index: 2;
 
-  .cgd-logo {
-    width: 36px;
-    height: 36px;
-    padding-left: 10px;
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .cgd-logo:hover {
-    transform: scale(1.2);
-  }
-
-  .navbar {
+  .page-links {
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -46,6 +47,10 @@
       gap: 5px;
       text-decoration: none;
       position: relative;
+      padding: 7px;
+      border-radius: 7px;
+      transition: background-color 0.2s ease-in-out;
+
       .nav-item {
         color: #fbe9f5;
         font-family: "Corbert", sans-serif;
@@ -61,78 +66,29 @@
       }
     }
 
-    .nav::before {
-      cursor: pointer;
-      content: "";
-      background: #fbe9f5;
-      position: absolute;
-      bottom: 10px;
-      width: 102%;
-      height: 2px;
-      transform-origin: right;
-      transform: scaleX(0);
-      transition: transform 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    .nav:hover {
+      background-color: hsla(343, 73%, 68%, 0.8);
     }
 
-    .nav:hover::before {
-      transform-origin: left;
-      transform: scaleX(1);
-    }
-  }
-
-  .socials-menu {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    padding: 0 1rem;
-
-    .menu-svg {
-      aspect-ratio: 1;
-      width: 24px;
+    .nav:active {
+      transition: backgroun-color 0.05s ease-out;
+      background-color: hsla(343, 62%, 51%, 0.8);
     }
   }
 }
-
-.footer {
+.socials-menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  backdrop-filter: blur(2rem);
-  background-color: hsla(343, 61%, 52%, 0.8);
-  padding: 1rem 0;
-  padding-inline: clamp(2rem, 40vw, 10rem);
+  gap: 1rem;
+  padding: 0 1rem;
 
-  .info-wrapper-footer,
-  .contact-wrapper-footer,
-  .social-wrapper-footer {
-    margin: 1rem;
-    box-sizing: border-box;
+  .menu-svg {
+    aspect-ratio: 1;
+    width: 24px;
+    transition: transform 0.1s ease-in-out;
   }
 
-  .info,
-  .contact,
-  .social {
-    color: hsl(320 70% 95%);
-    font-family: "League Spartan", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-  }
-
-  .social-wrapper-footer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .address,
-  .email,
-  .ig,
-  .fb,
-  .itch,
-  .linked {
-    color: #532d53;
-    font-family: "Corbert", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
+  .menu-svg:hover {
+    transform: scale(1.1);
   }
 }
