@@ -3,9 +3,9 @@ import sponsorpacklm from "assets/pics/light mode-2.png";
 import cc2mtl from "assets/icons/cc2-mtl.png";
 import cc2 from "assets/icons/cc2.png";
 import "app/css/sponsors.css";
-import type { V2_MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "@remix-run/node";
 
-export const meta: V2_MetaFunction = () => {
+export const meta: MetaFunction = () => {
   return [
     { title: "Sponsors | CGD" },
     { name: "description", content: "Welcome to Concordia Game Dev Club!" },
