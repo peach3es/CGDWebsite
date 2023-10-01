@@ -82,6 +82,10 @@ function handleBotRequest(
       }
     );
 
+    setTimeout(abort, ABORT_DELAY);
+  });
+}
+
 function handleBrowserRequest(
   request: Request,
   responseStatusCode: number,
@@ -128,3 +132,6 @@ function handleBrowserRequest(
       }
     );
 
+    setTimeout(abort, ABORT_DELAY);
+  });
+}
