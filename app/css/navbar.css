@@ -88,6 +88,7 @@
   padding: 7px;
   border-radius: 7px;
   transition: background-color 0.2s ease-in-out;
+  /* transition: height 0.5s ease-in-out; */
   color: #fbe9f5;
 }
 

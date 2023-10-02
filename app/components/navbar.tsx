@@ -38,7 +38,7 @@ const Navbar = () => {
       alt: "icon that brings you to gamedev sponsor page",
     },
   ];
-
+  // let [open, setOpen] = (false);
   return (
     <div className="navbar md-flex shadow-md fixed top-0 left-0 w-full md:items-center justify-between">
       <div className="flex-shrink-0 ">
