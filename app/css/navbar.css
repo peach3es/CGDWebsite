@@ -99,3 +99,8 @@
 .hamburger:active {
   background-color: hsla(343, 62%, 51%, 0.8);
 }
+
+.menu-open {
+  display: block;
+  justify-content: center;
+}

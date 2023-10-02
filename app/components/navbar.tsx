@@ -10,6 +10,7 @@ import fb from "assets/icons/facebook.svg";
 import itch from "assets/icons/itch.svg";
 import ln from "assets/icons/linked.svg";
 import { RiMenuFill } from "@react-icons/all-files/ri/RiMenuFill.js";
+import { useState } from "react";
 
 const Navbar = () => {
   let Links = [
@@ -38,7 +39,12 @@ const Navbar = () => {
       alt: "icon that brings you to gamedev sponsor page",
     },
   ];
-  // let [open, setOpen] = (false);
+  const [open, setOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setOpen(!open);
+  };
+
   return (
     <div className="navbar md-flex shadow-md fixed top-0 left-0 w-full md:items-center justify-between">
       <div className="flex-shrink-0 ">
@@ -50,32 +56,15 @@ const Navbar = () => {
           />
         </a>
       </div>
-      <RiMenuFill className="hamburger md:hidden flex self-center mr-8 w-10 h-10" />
-      {/* <button
-        data-collapse-toggle="navbar-sticky"
-        type="button"
-        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-sticky"
-        aria-expanded="false"
+      <RiMenuFill
+        onClick={toggleMenu}
+        className="hamburger md:hidden flex self-center mr-8 w-10 h-10"
+      />
+      <ul
+        className={`page-links hidden md:flex md:items-center ${
+          open ? "menu-open" : ""
+        }`}
       >
-        <span className="sr-only">Open main menu</span>
-        <svg
-          className="w-5 h-5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15"
-          ></path>
-        </svg>
-      </button> */}
-      <ul className="page-links hidden md:flex md:items-center">
         {Links.map((link) => (
           <li key={link.name}>
             <Link to={link.link} className="nav">
@@ -85,7 +74,11 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div className="socials-menu flex-shrink-0 hidden md:items-center md:flex">
+      <div
+        className={`socials-menu flex-shrink-0 hidden md:items-center md:flex ${
+          open ? "menu-open" : ""
+        }`}
+      >
         <a
           href="https://www.instagram.com/concordiagamedev/?hl=en"
           target="_blank"
