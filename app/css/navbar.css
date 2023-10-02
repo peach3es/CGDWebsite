@@ -18,11 +18,7 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  /* justify-content: space-between; */
-  /* align-items: center; */
   text-align: center;
-  /* height: min-content; */
   backdrop-filter: blur(2rem);
   background-color: hsla(343, 61%, 52%, 0.8);
   position: fixed;
@@ -31,8 +27,6 @@
   z-index: 2;
 
   .page-links {
-    display: flex;
-    flex-direction: row;
     gap: 2rem;
     justify-content: center;
     align-items: center;
@@ -42,7 +36,6 @@
     .nav {
       display: flex;
       flex-direction: row;
-      justify-content: center;
       align-items: center;
       gap: 5px;
       text-decoration: none;
@@ -77,8 +70,6 @@
   }
 }
 .socials-menu {
-  display: flex;
-  flex-direction: row;
   gap: 1rem;
   padding: 0 1rem;
 
@@ -91,4 +82,19 @@
   .menu-svg:hover {
     transform: scale(1.1);
   }
+}
+
+.hamburger {
+  padding: 7px;
+  border-radius: 7px;
+  transition: background-color 0.2s ease-in-out;
+  color: #fbe9f5;
+}
+
+.hamburger:hover {
+  background-color: hsla(343, 73%, 68%, 0.8);
+}
+
+.hamburger:active {
+  background-color: hsla(343, 62%, 51%, 0.8);
 }
