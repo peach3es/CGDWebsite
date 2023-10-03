@@ -13,6 +13,7 @@ import { RiMenuFill } from "@react-icons/all-files/ri/RiMenuFill.js";
 import { useState } from "react";
 
 const Navbar = () => {
+  // page-links and social-menu
   let Links = [
     {
       name: "Home",
@@ -39,6 +40,40 @@ const Navbar = () => {
       alt: "icon that brings you to gamedev sponsor page",
     },
   ];
+  let socials = [
+    {
+      name: "Instagram",
+      class: "ig-icon",
+      href: "https://www.instagram.com/concordiagamedev/?hl=en",
+      target: "_blank",
+      img: ig,
+      alt: "ig icon that brings you to game dev concordia instagram",
+    },
+    {
+      name: "Facebook",
+      class: "fb-icon",
+      href: "https://www.facebook.com/concordiagamedev/",
+      target: "_blank",
+      img: fb,
+      alt: "fb icon that brings you to game dev concordia facebook",
+    },
+    {
+      name: "Itch.io",
+      class: "itch-icon",
+      href: "https://concordiagamedev.itch.io/",
+      target: "_blank",
+      img: itch,
+      alt: "itch icon that brings you to game dev concordia itch.io",
+    },
+    {
+      name: "LinkedIn",
+      class: "linked-icon",
+      href: "https://www.linkedin.com/company/concordia-game-development/?original_referer=",
+      target: "_blank",
+      img: ln,
+      alt: "ln icon that brings you to game dev concordia linkedin",
+    },
+  ];
   const [open, setOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -47,6 +82,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar md-flex shadow-md fixed top-0 left-0 w-full md:items-center justify-between">
+      {/* logo */}
       <div className="flex-shrink-0 ">
         <a href="/">
           <img
@@ -60,9 +96,10 @@ const Navbar = () => {
         onClick={toggleMenu}
         className="hamburger md:hidden flex self-center mr-8 w-10 h-10"
       />
+      {/* nav-links */}
       <ul
-        className={`page-links hidden md:flex md:items-center ${
-          open ? "menu-open" : ""
+        className={`page-links md:flex md:items-center  ${
+          open ? "menu-open" : "hidden"
         }`}
       >
         {Links.map((link) => (
@@ -74,55 +111,22 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      {/* socials-links */}
       <div
-        className={`socials-menu flex-shrink-0 hidden md:items-center md:flex ${
-          open ? "menu-open" : ""
+        className={`socials-menu flex-shrink-0 md:items-center md:flex ${
+          open ? "menu-open" : "hidden"
         }`}
       >
-        <a
-          href="https://www.instagram.com/concordiagamedev/?hl=en"
-          target="_blank"
-          className="nav-social-icons ig-icon svg"
-        >
-          <img
-            src={ig}
-            alt="ig icon that brings you to game dev concordia instagram"
-            className="menu-svg"
-          ></img>
-        </a>
-        <a
-          href="https://www.facebook.com/concordiagamedev/"
-          target="_blank"
-          className="nav-social-icons fb-icon svg"
-        >
-          <img
-            src={fb}
-            alt="ig icon that brings you to game dev concordia facebook"
-            className="menu-svg"
-          ></img>
-        </a>
-        <a
-          href="https://concordiagamedev.itch.io/"
-          target="_blank"
-          className="nav-social-icons itch-icon svg"
-        >
-          <img
-            src={itch}
-            alt="ig icon that brings you to game dev concordia itch.io"
-            className="menu-svg"
-          ></img>
-        </a>
-        <a
-          href="https://www.linkedin.com/company/concordia-game-development/?original_referer="
-          target="_blank"
-          className="nav-social-icons linked-icon svg"
-        >
-          <img
-            src={ln}
-            alt="ig icon that brings you to game dev concordia linkedin"
-            className="menu-svg"
-          ></img>
-        </a>
+        {socials.map((social) => (
+          <a
+            key={social.name}
+            href={social.href}
+            target={social.target}
+            className={`nav-social-icons ${social.class} svg`}
+          >
+            <img src={social.img} alt={social.alt} className="menu-svg"></img>
+          </a>
+        ))}
       </div>
     </div>
   );
