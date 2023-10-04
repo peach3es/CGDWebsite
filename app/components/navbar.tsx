@@ -82,7 +82,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar shadow-md fixed top-0 left-0 w-full">
+    <div
+      className={`navbar shadow-md fixed top-0 left-0 w-full ${
+        open ? "menu-open" : ""
+      }`}
+    >
       <div className=" md:flex md:justify-between md:items-center w-full">
         {/* logo */}
         <div className="flex-shrink-0 flex flex-row justify-between">
@@ -108,13 +112,16 @@ const Navbar = () => {
 
         {/* nav-links */}
         <ul
-          className={`page-links flex flex-col md:flex-row justify-center gap-3 md:gap-2 items-center md:flex hidden ${
+          className={`page-links flex flex-col md:flex-row justify-center gap-3 md:gap-2 mx-16 md:mx-1 md:flex hidden ${
             open ? "menu-open" : ""
           }`}
         >
           {Links.map((link) => (
             <li key={link.name}>
-              <Link to={link.link} className="nav">
+              <Link
+                to={link.link}
+                className="nav border border-light-pink md:border-transparent"
+              >
                 <img src={link.img} alt={link.alt} className="svg-icon" />
                 <h3 className="nav-item">{link.name}</h3>
               </Link>
@@ -123,7 +130,7 @@ const Navbar = () => {
         </ul>
         {/* socials-links */}
         <div
-          className={`socials-menu flex-shrink-0 md:items-center flex flex-row justify-center my-3 hidden md:flex ${
+          className={`socials-menu flex-shrink-0 md:items-center flex flex-row justify-center my-6 hidden md:flex ${
             open ? "menu-open" : ""
           }`}
         >

@@ -99,4 +99,25 @@
 
 .menu-open {
   display: flex;
+  transform: translateY(0);
+  /* animation: slideDown 0.4s ease-in-out; */
+}
+
+/* In your CSS file or Tailwind CSS configuration */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-80%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-80%);
+  }
 }
