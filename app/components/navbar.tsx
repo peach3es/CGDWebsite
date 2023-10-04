@@ -10,6 +10,7 @@ import fb from "assets/icons/facebook.svg";
 import itch from "assets/icons/itch.svg";
 import ln from "assets/icons/linked.svg";
 import { RiMenuFill } from "@react-icons/all-files/ri/RiMenuFill.js";
+import { RiCloseFill } from "@react-icons/all-files/ri/RiCloseFill.js";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -81,52 +82,58 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar md-flex shadow-md fixed top-0 left-0 w-full md:items-center justify-between">
-      {/* logo */}
-      <div className="flex-shrink-0 ">
-        <a href="/">
-          <img
-            src={CGDLogo}
-            alt="Concordia-Game-Dev club logo"
-            className="cgd-logo h-16 w-16 p-3"
-          />
-        </a>
-      </div>
-      <RiMenuFill
-        onClick={toggleMenu}
-        className="hamburger md:hidden flex self-center mr-8 w-10 h-10"
-      />
-      {/* nav-links */}
-      <ul
-        className={`page-links md:flex md:items-center  ${
-          open ? "menu-open" : "hidden"
-        }`}
-      >
-        {Links.map((link) => (
-          <li key={link.name}>
-            <Link to={link.link} className="nav">
-              <img src={link.img} alt={link.alt} className="svg-icon" />
-              <h3 className="nav-item">{link.name}</h3>
-            </Link>
-          </li>
-        ))}
-      </ul>
-      {/* socials-links */}
-      <div
-        className={`socials-menu flex-shrink-0 md:items-center md:flex ${
-          open ? "menu-open" : "hidden"
-        }`}
-      >
-        {socials.map((social) => (
-          <a
-            key={social.name}
-            href={social.href}
-            target={social.target}
-            className={`nav-social-icons ${social.class} svg`}
-          >
-            <img src={social.img} alt={social.alt} className="menu-svg"></img>
+    <div className="navbar shadow-md fixed top-0 left-0 w-full">
+      <div className=" md:flex md:justify-between md:items-center w-full">
+        {/* logo */}
+        <div className="flex-shrink-0 flex flex-row justify-between">
+          <a href="/">
+            <img
+              src={CGDLogo}
+              alt="Concordia-Game-Dev club logo"
+              className="cgd-logo h-16 w-16 p-3"
+            />
           </a>
-        ))}
+          {/* menu logos */}
+          <div
+            onClick={() => setOpen(!open)}
+            className="hamburger flex self-center mr-4 md:hidden"
+          >
+            {open ? (
+              <RiCloseFill className="w-10 h-10 p-2" />
+            ) : (
+              <RiMenuFill className="w-10 h-10 p-2" />
+            )}
+          </div>
+        </div>
+
+        {/* nav-links */}
+        <ul
+          className={`page-links flex flex-col md:flex-row justify-center gap-3 md:gap-2 items-center`}
+        >
+          {Links.map((link) => (
+            <li key={link.name}>
+              <Link to={link.link} className="nav">
+                <img src={link.img} alt={link.alt} className="svg-icon" />
+                <h3 className="nav-item">{link.name}</h3>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        {/* socials-links */}
+        <div
+          className={`socials-menu flex-shrink-0 md:items-center flex flex-row justify-center my-3`}
+        >
+          {socials.map((social) => (
+            <a
+              key={social.name}
+              href={social.href}
+              target={social.target}
+              className={`nav-social-icons ${social.class} svg`}
+            >
+              <img src={social.img} alt={social.alt} className="menu-svg"></img>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );
