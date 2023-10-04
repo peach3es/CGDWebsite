@@ -95,7 +95,7 @@ const Navbar = () => {
           </a>
           {/* menu logos */}
           <div
-            onClick={() => setOpen(!open)}
+            onClick={toggleMenu}
             className="hamburger flex self-center mr-4 md:hidden"
           >
             {open ? (
@@ -108,7 +108,9 @@ const Navbar = () => {
 
         {/* nav-links */}
         <ul
-          className={`page-links flex flex-col md:flex-row justify-center gap-3 md:gap-2 items-center`}
+          className={`page-links flex flex-col md:flex-row justify-center gap-3 md:gap-2 items-center md:flex hidden ${
+            open ? "menu-open" : ""
+          }`}
         >
           {Links.map((link) => (
             <li key={link.name}>
@@ -121,7 +123,9 @@ const Navbar = () => {
         </ul>
         {/* socials-links */}
         <div
-          className={`socials-menu flex-shrink-0 md:items-center flex flex-row justify-center my-3`}
+          className={`socials-menu flex-shrink-0 md:items-center flex flex-row justify-center my-3 hidden md:flex ${
+            open ? "menu-open" : ""
+          }`}
         >
           {socials.map((social) => (
             <a
