@@ -1,0 +1,41 @@
+.footer {
+  justify-content: space-between;
+  backdrop-filter: blur(2rem);
+  background-color: hsla(343, 61%, 52%, 0.8);
+  /* padding: 1rem 0; */
+  /* padding-inline: clamp(2rem, 40vw, 10rem); */
+
+  .info-wrapper-footer,
+  .contact-wrapper-footer,
+  .social-wrapper-footer {
+    margin: 1rem;
+    box-sizing: border-box;
+  }
+
+  .info,
+  .contact,
+  .social {
+    color: hsl(320 70% 95%);
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .social-wrapper-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .address,
+  .email,
+  .ig,
+  .fb,
+  .itch,
+  .linked {
+    color: #532d53;
+    font-family: "Corbert", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}

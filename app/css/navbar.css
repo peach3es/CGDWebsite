@@ -3,14 +3,22 @@
   flex-direction: column;
 }
 
-.header {
+.cgd-logo {
+  transition: transform 0.2s ease-in-out;
+}
+
+.cgd-logo:hover {
+  transform: scale(1.1);
+}
+
+.cgd-logo:active {
+  transform: scale(0.9);
+}
+
+.navbar {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  justify-content: space-between;
-  align-items: center;
   text-align: center;
-  height: fit-content;
   backdrop-filter: blur(2rem);
   background-color: hsla(343, 61%, 52%, 0.8);
   position: fixed;
@@ -18,34 +26,22 @@
   width: 100%;
   z-index: 2;
 
-  .cgd-logo {
-    width: 36px;
-    height: 36px;
-    padding-left: 10px;
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .cgd-logo:hover {
-    transform: scale(1.2);
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
+  .page-links {
+    /* justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; */
     height: fit-content;
-
     .nav {
       display: flex;
       flex-direction: row;
-      justify-content: center;
       align-items: center;
       gap: 5px;
       text-decoration: none;
       position: relative;
+      padding: 7px;
+      border-radius: 7px;
+      transition: background-color 0.2s ease-in-out;
+
       .nav-item {
         color: #fbe9f5;
         font-family: "Corbert", sans-serif;
@@ -61,78 +57,67 @@
       }
     }
 
-    .nav::before {
-      cursor: pointer;
-      content: "";
-      background: #fbe9f5;
-      position: absolute;
-      bottom: 10px;
-      width: 102%;
-      height: 2px;
-      transform-origin: right;
-      transform: scaleX(0);
-      transition: transform 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    .nav:hover {
+      background-color: hsla(343, 73%, 68%, 0.8);
     }
 
-    .nav:hover::before {
-      transform-origin: left;
-      transform: scaleX(1);
-    }
-  }
-
-  .socials-menu {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    padding: 0 1rem;
-
-    .menu-svg {
-      aspect-ratio: 1;
-      width: 24px;
+    .nav:active {
+      transition: backgroun-color 0.05s ease-out;
+      background-color: hsla(343, 62%, 51%, 0.8);
     }
   }
 }
+.socials-menu {
+  gap: 1rem;
+  padding: 0 1rem;
 
-.footer {
+  .menu-svg {
+    aspect-ratio: 1;
+    width: 24px;
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .menu-svg:hover {
+    transform: scale(1.1);
+  }
+}
+
+.hamburger {
+  border-radius: 7px;
+  transition: background-color 0.2s ease-in-out;
+  /* transition: height 0.5s ease-in-out; */
+  color: #fbe9f5;
+}
+
+.hamburger:hover {
+  background-color: hsla(343, 73%, 68%, 0.8);
+}
+
+.hamburger:active {
+  background-color: hsla(343, 62%, 51%, 0.8);
+}
+
+.menu-open {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  backdrop-filter: blur(2rem);
-  background-color: hsla(343, 61%, 52%, 0.8);
-  padding: 1rem 0;
-  padding-inline: clamp(2rem, 40vw, 10rem);
+  transform: translateY(0);
+  /* animation: slideDown 0.4s ease-in-out; */
+}
 
-  .info-wrapper-footer,
-  .contact-wrapper-footer,
-  .social-wrapper-footer {
-    margin: 1rem;
-    box-sizing: border-box;
+/* In your CSS file or Tailwind CSS configuration */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-80%);
   }
-
-  .info,
-  .contact,
-  .social {
-    color: hsl(320 70% 95%);
-    font-family: "League Spartan", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
+  100% {
+    transform: translateY(0);
   }
+}
 
-  .social-wrapper-footer {
-    display: flex;
-    flex-direction: column;
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
   }
-
-  .address,
-  .email,
-  .ig,
-  .fb,
-  .itch,
-  .linked {
-    color: #532d53;
-    font-family: "Corbert", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
+  100% {
+    transform: translateY(-80%);
   }
 }

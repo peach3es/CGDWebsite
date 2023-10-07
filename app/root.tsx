@@ -12,7 +12,18 @@ import {
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 
+import styles from "./css/tailwind.css";
+
+// export const links: LinksFunction = () => [
+//   { rel: "stylesheet", href: stylesheet },
+// ];
+
+// export const links: LinksFunction = () => [
+//   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+// ];
+
 export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: styles },
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
