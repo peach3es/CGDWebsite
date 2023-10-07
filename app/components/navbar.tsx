@@ -109,10 +109,9 @@ const Navbar = () => {
             )}
           </div>
         </div>
-
         {/* nav-links */}
         <ul
-          className={`page-links flex flex-col md:flex-row justify-center gap-3 md:gap-2 mx-16 md:mx-1 md:flex hidden ${
+          className={`page-links flex-col md:flex-row justify-center gap-3 md:gap-2 mx-16 md:mx-1 md:flex hidden ${
             open ? "menu-open" : ""
           }`}
         >
@@ -130,7 +129,7 @@ const Navbar = () => {
         </ul>
         {/* socials-links */}
         <div
-          className={`socials-menu flex-shrink-0 md:items-center flex flex-row justify-center my-6 hidden md:flex ${
+          className={`socials-menu flex-shrink-0 md:items-center flex-row justify-center my-6 hidden md:flex ${
             open ? "menu-open" : ""
           }`}
         >
