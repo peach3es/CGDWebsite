@@ -48,10 +48,7 @@
 }
 
 .button-container {
-  all: unset;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* all: unset; */
   background: #c95d79;
   border-radius: 20px;
 

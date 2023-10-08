@@ -30,13 +30,21 @@ export default function DashboardSponsor() {
           alt="concordia gamedev club sponsorship package overview light mode"
           className="sponsor-img"
         />
-        <div className="riseup">
+        <div className="riseup flex flex-col lg:flex-row gap-5">
           <a
             className="button-container"
             target="_blank"
             href="/uploads/CGD_sponsorship_package_2023.pdf"
           >
-            <p>Click here for the detailed sponsorship package PDF</p>
+            <p className="py-4 align-middle w-full lg:w-80 text-center">
+              Click here for the detailed sponsorship package PDF
+            </p>
+          </a>
+          <a
+            className="button-container flex items-center justify-center"
+            href="mailto:game.development@concordia.ca"
+          >
+            <p className="py-4">Become a Sponsor!</p>
           </a>
         </div>
 
@@ -59,7 +67,7 @@ export default function DashboardSponsor() {
         </div>
       </div>
 
-      <div className="background">
+      <div className="background h-full">
         <span>
           <img
             src={cgdpink}
