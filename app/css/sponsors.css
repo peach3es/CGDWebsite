@@ -6,17 +6,6 @@
   padding-bottom: 2rem;
   gap: 5rem;
 
-  .sponsor-text {
-    font-family: "Corbert", sans-serif;
-    font-size: 20px;
-    text-align: center;
-    padding: 0 16vw;
-    color: #532d53;
-    font-weight: bold;
-
-    animation: sponsor-text 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.15s both;
-  }
-
   .sponsor-img {
     aspect-ratio: unset;
     width: 800px;
@@ -41,6 +30,17 @@
     width: 15%;
     object-fit: contain;
   }
+}
+
+.sponsor-text {
+  font-family: "Corbert", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 16vw;
+  color: #532d53;
+  font-weight: bold;
+
+  animation: sponsor-text 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.15s both;
 }
 
 .riseup {

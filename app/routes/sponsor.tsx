@@ -18,7 +18,7 @@ export default function DashboardSponsor() {
       <h1>Our Sponsors</h1>
       <div className="sponsor-container">
         {/* <div className="sponsor-text">Thank you for our sponsors!</div> */}
-        <div className="sponsor-text">
+        <div className="sponsor-text flex">
           We’ve set out to establish an environment which promotes interactions
           between club members and the game development industry at large. To
           better serve the CGD community, we have created a sponsorship package
