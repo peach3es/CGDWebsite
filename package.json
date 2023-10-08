@@ -4,10 +4,8 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "npm run build:css && remix build",
-    "build:css": "tailwindcss -m -i ./css/app.css -o app/css/app.css",
+    "build": "remix build",
     "dev": "remix dev --manual",
-    "dev:css": "tailwindcss -w -i ./css/app.css -o app/css/app.css",
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc"
   },
