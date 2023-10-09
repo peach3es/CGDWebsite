@@ -5,6 +5,7 @@ import homeicon from "assets/icons/home-icon.svg";
 import abouticon from "assets/icons/abtus-nav.svg";
 import eventsicon from "assets/icons/event-icon.svg";
 import sponsorsicon from "assets/icons/sponsor-icon.svg";
+import resourcesicon from "assets/icons/layers-svgrepo-com.svg";
 import ig from "assets/icons/IG.svg";
 import fb from "assets/icons/facebook.svg";
 import itch from "assets/icons/itch.svg";
@@ -39,6 +40,14 @@ const Navbar = () => {
       link: "/sponsor",
       img: sponsorsicon,
       alt: "icon that brings you to gamedev sponsor page",
+    },
+    // Create a a navabr item that can contain sub-items
+    // e.g. "More" -> list of small pages
+    {
+      name: "Resources",
+      link: "/resources",
+      img: resourcesicon,
+      alt: "icon that brings you to gamedev resource page",
     },
   ];
   let socials = [
