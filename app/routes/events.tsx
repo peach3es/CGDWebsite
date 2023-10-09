@@ -11,8 +11,8 @@ export const meta: MetaFunction = () => {
 export default function DashboardEvents() {
   return (
     <div className="page">
-      <h1>Events</h1>
-      <div className="background">
+      <h1 className="sm:text-8xl text-6xl align-middle pb-11">Events</h1>
+      <div className="background h-full">
         <span>
           <img
             src={cgdpink}

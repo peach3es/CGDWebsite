@@ -15,10 +15,10 @@ export const meta: MetaFunction = () => {
 export default function DashboardSponsor() {
   return (
     <div className="page">
-      <h1>Our Sponsors</h1>
+      <h1 className="sm:text-8xl text-6xl pb-11">Our Sponsors</h1>
       <div className="sponsor-container">
         {/* <div className="sponsor-text">Thank you for our sponsors!</div> */}
-        <div className="sponsor-text flex">
+        <div className="sponsor-text flex text-lg">
           <p>
             We've set out to establish an environment which promotes
             interactions between club members and the game development industry

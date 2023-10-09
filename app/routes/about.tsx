@@ -14,7 +14,7 @@ export default function DashboardAbout() {
   return (
     <div className="page">
       <div className="about-us-container">
-        <h1>About Us</h1>
+        <h1 className="sm:text-8xl text-6xl pb-11">About Us</h1>
         <div className="aboutus-text">
           We are Concordia's gamedev community and we focus on the technical and
           development aspects of video games in all disciplines, such as,
@@ -23,10 +23,10 @@ export default function DashboardAbout() {
         </div>
       </div>
       <div className="ourteam-container">
-        <h2 className="ourteam">Meet Our Team</h2>
+        <h2 className="ourteam sm:text-7xl text-5xl">Meet Our Team</h2>
       </div>
 
-      <div className="background">
+      <div className="background h-full">
         <span>
           <img
             src={cgdpink}
