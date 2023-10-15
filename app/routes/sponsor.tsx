@@ -24,7 +24,7 @@ export default function DashboardSponsor() {
             interactions between club members and the game development industry
             at large. To better serve the CGD community, we have created a
             sponsorship package for any organization interested in helping us
-            support the game developers of tomorrow!
+            support the game developers of tomorrow! Your mom
           </p>
         </div>
         <img
