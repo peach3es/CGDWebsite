@@ -19,7 +19,7 @@ export default function DashboardSponsor() {
       <h1 className="sm:text-8xl text-6xl pb-11">Our Sponsors</h1>
       <div className="sponsor-container">
         {/* <div className="sponsor-text">Thank you for our sponsors!</div> */}
-        <div className="sponsor-text flex text-lg">
+        <div className="sponsortext flex text-lg">
           <p>
             We've set out to establish an environment which promotes
             interactions between club members and the game development industry
