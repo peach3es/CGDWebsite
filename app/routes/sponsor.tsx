@@ -2,6 +2,7 @@ import cgdpink from "assets/icons/cgd-transp-pink.png";
 import sponsorpacklm from "assets/pics/light mode-2.png";
 import cc2mtl from "assets/icons/cc2-mtl.png";
 import cc2 from "assets/icons/cc2.png";
+import ubi from "assets/icons/ubisoft.png";
 import "app/css/sponsors.css";
 import type { MetaFunction } from "@remix-run/node";
 
@@ -52,7 +53,7 @@ export default function DashboardSponsor() {
 
         <div className="past-sponsors-container">
           <div className="sponsor-text">
-            Special thanks to our previous sponsors!
+            Special thanks to our previous partners & sponsors!
           </div>
           <div className="past-sponsors">
             <img
@@ -63,6 +64,11 @@ export default function DashboardSponsor() {
             <img
               src={cc2}
               alt="concordia gamedev club's past sponsor cyberconnect2 logo"
+              className="past-sponsor-img"
+            />
+            <img
+              src={ubi}
+              alt="concordia game dev club's past partner ubisoft logo"
               className="past-sponsor-img"
             />
           </div>
