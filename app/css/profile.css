@@ -8,3 +8,7 @@
   font-weight: bold;
   color: #532d53;
 }
+
+.profile-img {
+  aspect-ratio: 9/16;
+}
