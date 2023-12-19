@@ -8,7 +8,7 @@
   text-transform: uppercase;
   padding: 0 3vw;
 
-  animation: h1 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: h1 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.16s both;
 }
 
 .aboutus-text {
@@ -20,6 +20,7 @@
 }
 .blob {
   /* margin-right: 16vw; */
+  animation: riseup 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.1s both;
 }
 
 @keyframes aboutus-text {
