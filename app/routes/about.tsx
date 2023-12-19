@@ -4,6 +4,13 @@ import type { MetaFunction } from "@remix-run/node";
 import blob from "assets/pics/blob-aboutus.svg";
 import Profile from "app/components/profile";
 import tuana from "assets/pictures/execs/tuana.png";
+import charles from "assets/pictures/execs/charles_resized.png";
+import benedict from "assets/pictures/execs/benedict_resized.png";
+import hugo from "assets/pictures/execs/hugo_resized.png";
+import maxx from "assets/pictures/execs/maxx_resized.png";
+import peter from "assets/pictures/execs/peter_resized.png";
+import nick from "assets/pictures/execs/nick_resized.png";
+import carleen from "assets/pictures/execs/carleen_resized.png";
 
 export const meta: MetaFunction = () => {
   return [
@@ -37,30 +44,30 @@ export default function DashboardAbout() {
       <div className="ourteam-container my-10">
         <h2 className="ourteam sm:text-7xl text-5xl my-7">Meet Our Team</h2>
         <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 md:px-20 px-10">
-          <Profile name="Maxx Freund" position="President" image={tuana} />
+          <Profile name="Maxx Freund" position="President" image={maxx} />
           <Profile
             name="Charles Partous"
             position="VP Communication"
-            image={tuana}
+            image={charles}
           />
           <Profile name="Tuana Bicakci" position="Lead Artist" image={tuana} />
-          <Profile name="Peter Tian" position="Lead Developer" image={tuana} />
+          <Profile name="Peter Tian" position="Lead Developer" image={peter} />
           <Profile name="Rev Nahabedian" position="Artist" image={tuana} />
           <Profile
             name="Charles Atanacio"
             position="Developer - Communication"
-            image={tuana}
+            image={benedict}
           />
-          <Profile name="Hugo Morin" position="Developer" image={tuana} />
+          <Profile name="Hugo Morin" position="Developer" image={hugo} />
           <Profile
             name="Nicolas Boyer"
             position="Event Coordinator"
-            image={tuana}
+            image={nick}
           />
           <Profile
             name="Carleen Loney"
             position="Event Coordinator - Artist"
-            image={tuana}
+            image={carleen}
           />
         </div>
       </div>
