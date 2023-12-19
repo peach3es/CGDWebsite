@@ -52,7 +52,7 @@ export default function DashboardSponsor() {
         </div>
 
         <div className="past-sponsors-container">
-          <div className="sponsor-text">
+          <div className="sponsortext">
             Special thanks to our previous partners & sponsors!
           </div>
           <div className="past-sponsors">
