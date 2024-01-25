@@ -48,7 +48,7 @@ export default function DashboardAbout() {
           </div>
         </div>
       </div>
-      <div className="ourteam-container sm:mt-44 mt-20">
+      <div className="ourteam-container sm:my-44 my-20">
         <h2 className="ourteam sm:text-7xl text-5xl my-10">Meet Our Team</h2>
         <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 md:px-20 px-10">
           <Profile name="Maxx Freund" position="President" image={maxx} />
