@@ -28,13 +28,13 @@ export default function DashboardAbout() {
       <div className="about-us-container ">
         <h1 className="sm:text-8xl text-6xl ">About Us</h1>
         <div className="aboutus-container flex flex-col lg:flex-row justify-center items-center md:gap-20 sm:gap-24 gap-6 px-20 mb-20 xl:my-44">
-          <div className="aboutus-text font-bold my-10 md:text-2xl 2xl:text-3xl text-lg ">
+          <div className="aboutus-text font-bold my-10 md:text-2xl 2xl:text-3xl text-lg -z-10">
             We are Concordia's gamedev community and we focus on the technical
             and development aspects of video games in all disciplines, such as,
             programming, art, game design, storytelling, sound engineering and
             more.
           </div>
-          <div className="blob w-full flex items-center sm:my-32 lg:my-28 z-0 md:max-lg:mt-60 my-28">
+          <div className="blob w-full flex items-center sm:my-32 lg:my-28 -z-20 md:max-lg:mt-60 mt-28 sm:mb-0 mb-16">
             <img
               src={blob}
               className="blob absolute"
