@@ -83,7 +83,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar shadow-md fixed top-0 left-0 w-full ${
+      className={`navbar shadow-md fixed top-0 left-0 w-full z-20 ${
         open ? "menu-open" : ""
       }`}
     >

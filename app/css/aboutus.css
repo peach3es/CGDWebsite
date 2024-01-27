@@ -8,5 +8,31 @@
   text-transform: uppercase;
   padding: 0 3vw;
 
-  animation: h1 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: h1 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.16s both;
+}
+
+.aboutus-text {
+  font-family: "Corbert", sans-serif;
+  /* padding: 0 0 0 16vw; */
+  color: #532d53;
+
+  animation: riseup 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.1s both;
+}
+.blob {
+  /* margin-right: 16vw; */
+  animation: riseup 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.1s both;
+}
+
+@keyframes aboutus-text {
+  0% {
+    transform: translateZ(-700px) translateY(50px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
 }

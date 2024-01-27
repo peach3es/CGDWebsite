@@ -2,6 +2,7 @@ import cgdpink from "assets/icons/cgd-transp-pink.png";
 import sponsorpacklm from "assets/pics/light mode-2.png";
 import cc2mtl from "assets/icons/cc2-mtl.png";
 import cc2 from "assets/icons/cc2.png";
+import ubi from "assets/icons/ubisoft.png";
 import "app/css/sponsors.css";
 import type { MetaFunction } from "@remix-run/node";
 
@@ -18,13 +19,15 @@ export default function DashboardSponsor() {
       <h1 className="sm:text-8xl text-6xl pb-11">Our Sponsors</h1>
       <div className="sponsor-container">
         {/* <div className="sponsor-text">Thank you for our sponsors!</div> */}
-        <p className="sponsortext text-lg">
-          We've set out to establish an environment which promotes interactions
-          between club members and the game development industry at large. To
-          better serve the CGD community, we have created a sponsorship package
-          for any organization interested in helping us support the game
-          developers of tomorrow!
-        </p>
+        <div className="sponsortext flex text-lg">
+          <p>
+            We've set out to establish an environment which promotes
+            interactions between club members and the game development industry
+            at large. To better serve the CGD community, we have created a
+            sponsorship package for any organization interested in helping us
+            support the game developers of tomorrow!
+          </p>
+        </div>
         <img
           src={sponsorpacklm}
           alt="concordia gamedev club sponsorship package overview light mode"
@@ -49,8 +52,8 @@ export default function DashboardSponsor() {
         </div>
 
         <div className="past-sponsors-container">
-          <div className="sponsor-text">
-            Special thanks to our previous sponsors!
+          <div className="sponsortext">
+            Special thanks to our previous partners & sponsors!
           </div>
           <div className="past-sponsors">
             <img
@@ -61,6 +64,11 @@ export default function DashboardSponsor() {
             <img
               src={cc2}
               alt="concordia gamedev club's past sponsor cyberconnect2 logo"
+              className="past-sponsor-img"
+            />
+            <img
+              src={ubi}
+              alt="concordia game dev club's past partner ubisoft logo"
               className="past-sponsor-img"
             />
           </div>

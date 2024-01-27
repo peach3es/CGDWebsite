@@ -12,7 +12,7 @@ export default function DashboardEvents() {
   return (
     <div className="page">
       <h1 className="sm:text-8xl text-6xl align-middle pb-11">Events</h1>
-      <div className="background h-full">
+      {/* <div className="background h-full">
         <span>
           <img
             src={cgdpink}
@@ -48,7 +48,7 @@ export default function DashboardEvents() {
             className="floaties"
           />
         </span>
-      </div>
+      </div> */}
     </div>
   );
 }
