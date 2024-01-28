@@ -14,12 +14,16 @@ const EventCard: React.FC<EventProps> = ({
   image,
 }) => {
   return (
-    <div className="flex flex-row">
-      <img src={image} alt={title} className="w-1/2" />
-      <div className="flex flex-col">
-        <h3 className="date">{date}</h3>
-        <h1 className="title">{title}</h1>
-        <p className="description">{description}</p>
+    <div className="flex flex-row bg-wh rounded-xl p-10 h-fit gap-10 w-1/2">
+      <img src={image} alt={title} className="size-44 rounded-md" />
+      <div className="flex flex-col gap-5">
+        <h3 className="date text-xl text-dark-purple font-corbert font-bold">
+          {date}
+        </h3>
+        <h1 className="title text-3xl text-cgd-pink text-left">{title}</h1>
+        <p className="description text-xl text-dark-purple font-corbert font-bold">
+          {description}
+        </p>
       </div>
     </div>
   );
