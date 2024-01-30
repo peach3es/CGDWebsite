@@ -15,7 +15,11 @@ const EventCard: React.FC<EventProps> = ({
 }) => {
   return (
     <div className="flex flex-row bg-wh rounded-xl p-10 h-fit gap-10 w-1/2">
-      <img src={image} alt={title} className="size-44 rounded-md" />
+      <img
+        src={image}
+        alt={title}
+        className={`object-contain aspect-{3/2} w-1/6 rounded-md`}
+      />
       <div className="flex flex-col gap-5">
         <h3 className="date text-xl text-dark-purple font-corbert font-bold">
           {date}

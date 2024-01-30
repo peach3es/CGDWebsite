@@ -3,6 +3,8 @@ import type { MetaFunction } from "@remix-run/node";
 import EventCard from "app/components/eventcard";
 import ggj from "assets/icons/ggj2024.png";
 import cgd2023 from "assets/icons/cgdfall2023.png";
+import cgd2022 from "assets/icons/cgdfall2022.png";
+import megamigs from "assets/icons/megamigs2022.png";
 
 export const meta: MetaFunction = () => {
   return [
@@ -27,8 +29,20 @@ export default function DashboardEvents() {
         <EventCard
           title="CGD Jam Fall 2023"
           date="Nov 3-5, 2023"
-          description="Organized by Concordia Game Dev, this 48 hour Jam event's theme was 'Space Between'."
+          description="Organized by Concordia Game Dev, this 48 hour Game Jam event's theme was 'Space Between'."
           image={cgd2023}
+        />
+        <EventCard
+          title="Megamigs 2022"
+          date="Oct 19-22, 2022"
+          description="Following the Fall Jam in 2022, we embark and explored Canada's video game gathering for the industry!"
+          image={megamigs}
+        />
+        <EventCard
+          title="CGD Jam Fall 2022"
+          date="Oct 14-16, 2022"
+          description="The community's never been so alive! Our club was able to organize and host our first in-person event in over 2 years. With over 50 participants and 11 game submissions, the 2022 CGD Game Jam was major success!"
+          image={cgd2022}
         />
       </div>
       {/* <div className="background h-full">
