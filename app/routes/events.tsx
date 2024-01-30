@@ -17,7 +17,7 @@ export default function DashboardEvents() {
       <h1 className="sm:text-8xl text-6xl align-middle pb-11">Events</h1>
       <h2 className="ourteam sm:text-7xl text-5xl my-10 ml-80">Past Events</h2>
 
-      <div className="flex flex-col gap-3 items-center w-full">
+      <div className="flex flex-col gap-3 items-center w-full mb-10">
         <EventCard
           title="Global Game Jam 2024"
           date="Jan 26-28, 2024"
